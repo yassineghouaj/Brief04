@@ -1,0 +1,108 @@
+/*===============variabales==============*/
+/*==================@mixin==============*/
+/*======================================*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: poppins,sans-serif;
+  box-sizing: border-box;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/login-bg.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  backdrop-filter: brightness(20%);
+}
+
+.login-content h1 {
+  font-size: 70px;
+  margin: 0 0;
+}
+
+@media only screen and (max-width: 950px) {
+  .login-content h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .login-content h1 {
+    font-size: 40px;
+  }
+}
+
+.login-content span {
+  color: #F52D1F;
+}
+
+.login-content p {
+  margin-top: 0;
+}
+
+.login-content .login-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  width: 27%;
+}
+
+@media only screen and (max-width: 950px) {
+  .login-content .login-inputs {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .login-content .login-inputs {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .login-content .login-inputs {
+    width: 80%;
+  }
+}
+
+.login-content .login-inputs input, .login-content .login-inputs button {
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  padding-left: 30px;
+}
+
+.login-content .login-inputs input:focus, .login-content .login-inputs button:focus {
+  outline: none;
+}
+
+.login-content .login-inputs input:nth-child(3), .login-content .login-inputs button:nth-child(3) {
+  padding-left: 0;
+}
+
+.login-content button {
+  background-color: #F52D1F;
+  color: white;
+  font-size: 28px;
+  font-weight: 200;
+  text-align: center;
+}

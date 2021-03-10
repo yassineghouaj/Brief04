@@ -1,0 +1,106 @@
+/*===============variabales==============*/
+
+@import '_variabales';
+
+/*==================@mixin==============*/
+@import '_mixin';
+
+
+
+/*======================================*/
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    box-sizing: border-box;
+   
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/login-bg.jpg') no-repeat;
+    background-size: cover;
+    @include flex(column,center,center );
+   
+     
+  
+   
+}
+.login-content{
+   
+    @include flex(column,center,center );
+    width: 100%;
+    height: 100vh;
+    color:white;
+    backdrop-filter: brightness(20%);
+    h1{
+        font-size:70px;
+        margin: 0 0;
+        @include media('tab') {
+            font-size:60px;
+          }
+          @include media('small') {
+            font-size:40px;
+          }
+          
+        
+        
+    }
+    span{
+        color:$orange;
+    }
+    p{
+        margin-top: 0;
+    }
+
+    .login-inputs{
+        @include flex(column,center,center );
+        gap: 30px;
+        margin-top:40px;
+        width: 27%;
+        @include media('tab') {
+            width: 40%;
+          }
+          @include media('mobile') {
+            width: 60%;
+          }
+          @include media('small') {
+            width: 80%;
+          }
+        input{
+           
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+            border: none;
+            padding-left: 30px;
+            // &::placeholder{
+            //     padding-left: 30px;
+            // }
+          
+            &:focus{
+                outline: none;
+                
+            }
+            &:nth-child(3){
+                padding-left:0;
+            }
+          
+        }
+
+    }
+    button{
+        background-color: $orange;
+        color: white;
+        @extend input;
+        font-size: 28px;
+        font-weight:200;
+        text-align: center;
+
+    }
+}
+
+

@@ -1,0 +1,28 @@
+
+@mixin flex($dir,$just,$alin) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $alin;
+}
+
+@mixin media($queryString){
+    @if ($queryString=='tab') {
+        @media only screen and (max-width:950px) {
+            @content;
+        }
+        
+    }
+    @if ($queryString=='mobile') {
+        @media only screen and (max-width:512px) {
+            @content;
+        }
+        
+    }
+    @if ($queryString=='small') {
+        @media only screen and (max-width:475px) {
+            @content;
+        }
+        
+    }
+}
