@@ -13,14 +13,14 @@
       <div class="side-bar">
            <div class="profile">
                 <img src="img/bussiness-man.svg" alt="user-profile-img">
-                <h3>StoreKeeper</h3>
+                <h3 id="sise_name">StoreKeeper</h3>
            </div>
             <div class="side-menu">
                 <ul>
                     <li ><a href="index.php"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span>Profile</span></li></a>
                     <li class="active"><a href="dashboard.php"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i><span>Dashboard</span></li></a>
-                    <li><a href="tasks.php"><i class="fa fa-tasks fa-2x" aria-hidden="true"></i><span>Tasks</span></li></a>
-                    <li><a href="#"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i><span>Logout</span></li></a>
+                    <li><a href="tasks.php"><i class="fa fa-list fa-2x" aria-hidden="true"></i><span>Tasks</span></li></a>
+                    <li><a href="login.php"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i><span>Logout</span></li></a>
                 </ul>
             </div>
            
@@ -32,41 +32,19 @@
                    <h1>30</h1>
                    <h4>Graphic cards</h4>
                 </div>
-                <div class="card">
                 
-                </div>
-                <div class="card">
-                
-                </div>
-                <div class="card">
-                
-                </div>
-                <div class="card">
-                
-                </div>
-                <div class="card">
-                
-                </div>
-                <div class="card">
-                
-                </div>
-                <div class="card">
-                
-                </div>
 
             </div>
 
             <div class="table-dashboard">
                 <div class="search">
 
-                    <select name="" id="">
+                    <select class=" cat-name">
                         <option value="0">Select categorie:</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
                     </select>
                     <div class="search-input" action="">
                         <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                       
                     </div>
 
                 </div>
@@ -83,14 +61,7 @@
                         
                         </tr>
 
-                        <tr>
-                        <td>1</td>
-                        <td>Nvidya GTX 1050</td>
-                        <td>Grapyic cards</td>
-                        <td>200$</td>
-                        <td>5000</td>
-                        <td>  cumque velit quaerat ipsum. Asperiores, architecto cum animi corrupti odio sunt eligendi. Non.</td>
-                        </tr>
+                       
                         
                         </tr>
                                         
@@ -105,7 +76,8 @@
       
     </div>
 
-
+   
+    <script src="js/dashboard.js"></script>
     
 </body>
 </html>

@@ -13,14 +13,14 @@
        <div class="side-bar">
            <div class="profile">
                 <img src="img/bussiness-man.svg" alt="user-profile-img">
-                <h3>StoreKeeper</h3>
+                <h3 id="sise_name">StoreKeeper</h3>
            </div>
             <div class="side-menu">
              <ul>
                     <li><a href="index.php"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span>Profile</span></li></a>
                     <li><a href="dashboard.php"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i><span>Dashboard</span></li></a>
-                    <li class="active"><a href="tasks.php"><i class="fa fa-tasks fa-2x" aria-hidden="true"></i><span>Tasks</span></li></a>
-                    <li><a href="#"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i><span>Logout</span></li></a>
+                    <li class="active"><a href="tasks.php"><i class="fa fa-list fa-2x" aria-hidden="true"></i><span>Tasks</span></li></a>
+                    <li><a href="login.php"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i><span>Logout</span></li></a>
                 </ul>
             </div>
            
@@ -43,7 +43,7 @@
        </div>
       
     </div>
-
+  
 
     
 </body>

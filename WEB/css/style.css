@@ -35,12 +35,6 @@ body {
   margin: 0 0;
 }
 
-@media only screen and (max-width: 950px) {
-  .login-content h1 {
-    font-size: 60px;
-  }
-}
-
 @media only screen and (max-width: 475px) {
   .login-content h1 {
     font-size: 40px;

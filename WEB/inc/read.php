@@ -34,22 +34,43 @@ function read_login($email,$pass){
                 $_SESSION["phone"]=$row["phone"];
                 $_SESSION["age"]=$row["age"];
                 $_SESSION["adresse"]=$row["adresse"];
-                
-                
-
                 return true;
 
 
              }else{
                  return  false;
-             }
-            
-        
-        
-          }
-          
-        }
+             }    
+          }    
+      }
 
+function read_categ(){
+    global $conn;
+    $result= $conn->query("SELECT * FROM category");
+    $data=array();
+    while($row = mysqli_fetch_object($result)){
+          $data[]=$row;
+
+    }
+    return $data;
+}
+
+
+function get_cat_name(){
+    global $conn;
+    $result= $conn->query("SELECT categ_id,catg_name FROM category");
+    $row=mysqli_fetch_all($result,MYSQLI_ASSOC);
+    return $row;
+
+}
+
+function read_product(){
+    global $conn;
+    $result= $conn->query("SELECT * FROM `product` JOIN category ON product.categ_id = category.categ_id");
+    
+    $row = mysqli_fetch_all($result,MYSQLI_ASSOC);
+    return $row;
+
+}
 
         
 ?>

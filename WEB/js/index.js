@@ -9,6 +9,7 @@ let profile_adresse = document.querySelector("body > div > div.content-container
 
 
 
+
 const result = fetch("http://localhost/brief04/inc/index.php", {
     headers: {
         // 'Accept': 'application/json',
@@ -20,7 +21,7 @@ const result = fetch("http://localhost/brief04/inc/index.php", {
     data => {
         
 
-
+        
         profile_paas.value=data['pass'];
         profile_email.value=data['email'];
         profile_first.value=data['first'];

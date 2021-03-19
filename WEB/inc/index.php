@@ -17,6 +17,4 @@ $array = array("pass"=>$_SESSION["pass"],
 print_r(json_encode($array));
 
 
-
-
 ?>

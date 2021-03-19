@@ -29,7 +29,7 @@ login_btn.addEventListener('click', function () {
         } else {
 
             let login_info = { email: email, password: password };
-            console.log(login_info);
+            
 
 
             const result = fetch("http://localhost/brief04/inc/login.php", {
